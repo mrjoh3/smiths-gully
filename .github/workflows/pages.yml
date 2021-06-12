@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
-      - name: Publish Site
-        uses: chabad360/hugo-gh-pages@master
+      - name: Hugo to GH Pages
+        uses: chabad360/hugo-gh-pages@v2
         with:
           githubToken: ${{ secrets.PERSONAL_TOKEN }}
